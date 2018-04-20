@@ -31,4 +31,10 @@
 
       ab*c+d?[ef]
 
-![state-machine-1 ans](/assets/state-machine-1.jpeg)
+  ![state-machine-1](/assets/state-machine-1.jpeg)
+
+* A lion can be sleeping, eating, hunting, or preening. Draw a state
+  machine diagram for the lion and label the transition events that
+  cause state transitions.
+
+  ![state-machine-2](/assets/state-machine-2.png)
