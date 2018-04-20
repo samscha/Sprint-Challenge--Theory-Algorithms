@@ -33,13 +33,13 @@
 
       ab*c+d?[ef]
 
-  ![state-machine-1](/Sprint-Challenge--Theory-Algorithms/assets/state-machine-1.jpeg)
+  ![state-machine-1](/assets/state-machine-1.jpeg)
 
 * A lion can be sleeping, eating, hunting, or preening. Draw a state
   machine diagram for the lion and label the transition events that
   cause state transitions.
 
-  ![state-machine-2](/Sprint-Challenge--Theory-Algorithms/assets/state-machine-2.png)
+  ![state-machine-2](/assets/state-machine-2.png)
 
 * The VT-100 terminal (console) outputs text to the screen as it
   receives it over the wire. One exception is that when it receives an
@@ -66,7 +66,7 @@
   * Draw a state machine diagram for a VT-100 that can consume regular
     character sequences as well as the two above ESC sequences.
 
-  ![state-machine-3](/Sprint-Challenge--Theory-Algorithms/assets/state-machine-3.jpeg)
+  ![state-machine-3](/assets/state-machine-3.jpeg)
 
 ## Algorithms
 
