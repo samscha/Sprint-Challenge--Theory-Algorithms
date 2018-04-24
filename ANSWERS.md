@@ -59,9 +59,9 @@
     bold sequence need only accept `1` (and is a trivial regex). (ESC is
     a single character which can be represented with `\e` in the regex.)
 
-    (1) `/(\e\[[0-9][0-9];[0-9][0-9]f)/g`
+    (1) `/(\e\[[0-9]+;[0-9]+f)/g`
 
-    (2) `(\e\[1m)/g`
+    (2) `(\e\[1m]/g`
 
   * Draw a state machine diagram for a VT-100 that can consume regular
     character sequences as well as the two above ESC sequences.
@@ -74,9 +74,9 @@
 
 a) `O(n)` = `O(n**3 / n**2)`
 
-b) unknown. all elements of `array` might be greater than `x` -> runs forever (stuck at `i = 0` and `array[0] > x`)
+b) `O(log n)`
 
-c) `O(n**0.5 / 2)`
+c) `O(n**0.5)`
 
 d) `O(n log n)` = `O((1 / (2**n) * n))` note: `1 / (2**n)` = `log n / log 2` but constants are ignored in `O(n)`
 
@@ -110,6 +110,19 @@ int find_max_difference(int arr[], int n)
   }
 
   return max - min;
+
+  /* model solution
+  minVal = a[0];
+  maxDiff = 0;
+
+  for (int i = 0; i < n; i++)
+  {
+    minVal = min(minVal, arr[i]);
+    maxDiff = max(maxDiff, arr[i] - minVal);
+  }
+
+  return maxDiff;
+  */
 }
 ```
 
